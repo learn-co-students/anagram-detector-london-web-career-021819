@@ -8,7 +8,7 @@ attr_accessor :word
   end
 
   def match(array)
-    array.select {|word| word.chars.sort.join == self.word.chars.sort.join }
+    array.select {|word| word.chars.sort == self.word.chars.sort}
   end
 
 end
